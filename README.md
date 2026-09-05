@@ -18,3 +18,47 @@ Determine which discount levels help profit, which hurt it, and what discount po
 - Four states drive the majority of losses: **Texas, Ohio, Pennsylvania, Illinois** — each averaging 30%+ discounts
 
 ## 🗂️ Repository Structure
+
+superstore-discount-profit-analysis/
+├── README.md
+├── data/
+│ └── superstore_cleaned.csv # Cleaned dataset (standardized dates, trimmed whitespace)
+├── sql/
+│ └── superstore_analysis.sql # MySQL schema, cleaning, and 7 analytical queries
+├── notebooks/
+│ └── Superstore.ipynb # Python analysis: correlation, elasticity, RFM, Pareto
+├── powerbi/
+│ └── SuperStore.pbix # 6-page interactive dashboard
+└── docs/
+└── Project_Roadmap.docx # Project scope, methodology, deliverables
+
+
+## 🛠️ Tools Used
+
+- **MySQL** — data cleaning, discount tier segmentation, regional/state/customer profit queries
+- **Python (pandas, matplotlib/seaborn)** — correlation analysis, price elasticity simulation, RFM segmentation, Pareto analysis
+- **Power BI** — 6-page interactive dashboard with drill-downs and dynamic recommendations
+
+## 📈 Dashboard Pages
+
+1. **Executive Overview** — top-line KPIs and the discount cliff
+2. **Geography (Where)** — regional and state-level profit drain
+3. **Product (What)** — category and sub-category performance
+4. **Discount & Elasticity (How Much)** — correlation, elasticity, cap simulation
+5. **Customers & Fulfillment (Who + Time)** — account-level leakage, shipping efficiency
+6. **Recommendations** — governance policy and evidence-based action items
+
+## ✅ Recommendations
+
+- Cap discounts at 20% at checkout
+- Review top loss-making customer accounts individually
+- Audit discount approval practices in Texas, Ohio, Pennsylvania, and Illinois first
+
+## ⚠️ Scope Note
+
+This analysis is based on 2014–2017 data only. No claims are made about years outside this range.
+
+## 📬 Contact
+
+Built by Tanuja — feel free to open an issue or reach out with questions.
+
